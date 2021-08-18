@@ -1,0 +1,14 @@
+<div *ngIf="animal">
+
+    <h2>{{animal.name | uppercase}} Fun Facts!</h2>
+    <div><span>ID: </span>{{animal.id}}</div>
+    <div><span>Type: </span>{{animal.type}}</div>
+    <div><span>Description: </span>{{animal.description}}</div>
+
+    <div>
+      <label>Age:
+        <input [(ngModel)]="animal.age" placeholder="Happy Birthday! Enter new Age:"/>
+      </label>
+    </div>
+  
+</div>
